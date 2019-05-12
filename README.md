@@ -1,17 +1,21 @@
-# esplugin_mysql
+# vAyuda 1.1
+Script personalizado del servidor "EuropeanRP"
 
-An MySQL plugin for [EssentialMode](https://github.com/kanersps/essentialmode).
 
-## Installation
+Script terminado por # Basel.
+Cualquier intento de copia o cambio de nombre podrá ser denunciado por los derechos que tiene el creador.
 
-- Download [esplugin_mysql](https://github.com/kanersps/esplugin_mysql/archive/master.zip)
-- Make sure you have [mysql-async](https://github.com/brouznouf/fivem-mysql-async) installed and working
-- Import the SQL file provided with this project, `esplugin_mysql.sql`
-- Add the following convar in your server configuration file: `set es_enableCustomData 1`. Make sure you put it directly under `mysql_connection_string`
-- Make your load order is correct. Here's how it should look:
+# Como descargarlo
 
-```bash
-start mysql-async
-start essentialmode
-start esplugin_mysql
-```
+Descargarlo en [github]
+Deberás cambiar el nombre de la carpeta de  "vAyuda 1.1" a "vAyuda"
+Deberás de meter la carpeta (vAyuda) en [resources]
+Y después ir al archivo [server.cfg] y poner "start vAyuda"
+
+# Características
+
+Puedes configurar los mensajes a tu gusto.
+Soporte de Prefijos y Sufijos.
+Comando [/ayuda] para poder ver mensajes personalizados para tí.
+    Ej: '/ayuda'
+Mensaje: "Unete a nuestro discord -> (discord)"
