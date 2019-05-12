@@ -1,20 +1,17 @@
-# vAnnouncer
-**Simple auto announce script for FiveM servers that sends one of the unlimited configurable messages, after every x amount of minutes.**
+# esplugin_mysql
 
------
+An MySQL plugin for [EssentialMode](https://github.com/kanersps/essentialmode).
 
-Get the latest version here: https://github.com/TomGrobbe/vAnnouncer/releases
+## Installation
 
------
+- Download [esplugin_mysql](https://github.com/kanersps/esplugin_mysql/archive/master.zip)
+- Make sure you have [mysql-async](https://github.com/brouznouf/fivem-mysql-async) installed and working
+- Import the SQL file provided with this project, `esplugin_mysql.sql`
+- Add the following convar in your server configuration file: `set es_enableCustomData 1`. Make sure you put it directly under `mysql_connection_string`
+- Make your load order is correct. Here's how it should look:
 
-## Features
-- Configure as many messages as you like.
-- Format each message to your liking.
-- Prefix & Suffix support.
-- Configure the delay (in minutes) between each message.
-- Ignorelist: PlayerIdentifiers on this list will be ignored (will not receive the auto-messages).
-- `/automessage` command to toggle the auto-messages on/off.
-
------
-
-Forum topic: https://forum.fivem.net/t/release-vannouncer-v1-3/42032/
+```bash
+start mysql-async
+start essentialmode
+start esplugin_mysql
+```
